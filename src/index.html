@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>three.js ar - hit test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<!-- <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.3.0/aframe/build/"></script> -->
+</head>
+
+<body>
+
+	<script src="./scripts.js" type="module"></script>
+
+	<div id="container">
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="ar-object" id="1" href="#">Item_1</a>
+			<a class="ar-object" id="2" href="#">Item_2</a>
+			<a class="ar-object" id="3" href="#">Item_3</a>
+			<a class="ar-object" id="4" href="#">Item_4</a>
+		</div>
+
+		<div id="container" style="position: fixed;"></div>
+	
+	<span style="font-size:30px;cursor:pointer; position: absolute;" onclick="openNav()">&#9776; open</span>
+
+	<button type="button" id="place-button">PLACE</button>
+
+	</div>
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+	<!-- Import maps polyfill -->
+	<!-- Remove this when import maps will be widely supported -->
+	<!-- <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script> -->
+
+	<!-- <script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script> -->
+
+
+</body>
+
+</html>
