@@ -1,11 +1,14 @@
 import * as THREE from './build/three.module.js';
+// import * as THREE from 'three';
 // import * as AR from 'ar.js';
-import { ARButton } from './threejsjsm/webxr/ARButton.js';
+import { ARButton } from './jsm/webxr/ARButton.js';
 
-import { OrbitControls } from './threejsjsm/controls/OrbitControls.js';
-import { GLTFLoader } from './threejsjsm/loaders/GLTFLoader.js';
-import { RGBELoader } from './threejsjsm/loaders/RGBELoader.js';
-// import { RoughnessMipmapper } from './threejsjsm/utilsnew/RoughnessMipmapper.js';
+
+import { OrbitControls } from './jsm/controls/OrbitControls.js';
+import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+// import {newLoader} from './threejsjsm/loaders/GLTFLoader.js';
+import { RGBELoader } from './jsm/loaders/RGBELoader.js';
+
 
 let container;
 let camera, scene, renderer;
